@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Holistic Fitness Website</title> 
+  <link rel="stylesheet" href="holisticfitness.css">
+<!-- Font sizes from google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- to close and open the menu - font awesome 4cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body> 
+<!-- add the logo and made it clickable with a tag --> 
+  <section class="header"> 
+<!-- Top nav links and a tag to be able to click on links --> 
+    <nav> 
+      <a href="holisticfitn/Users/Eric (Mansa) Marah/Downloads/Holistic fitness.gifess.html">  
+        <img src="holisticfitnessimages/holisticfitness.gif" alt="hoisticfitness logo" height="70px" width="90px"></a> 
+<!--  -->
+        <div class="topnav-links" id="navLinks">
+<!-- to close the menu - font awesome 4icons- search close, copy past in html, remove the aria-hidden for simplisity -->
+<!-- added an onclick to hide menu javascript function -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+          <a class="active" href="#home" >Home</a>
+          <a href="#memberships">Memberships</a>
+          <a href="#login">Log In</a>
+          <a href="#holistic-shop">Holistic Shop</a>
+          <a href="#support">Support</a>
+        </div>
+<!-- to close the menu - font awesome 4icons- search menu, copy past in html and remove the aria-hidden for simplisity -->
+<!-- added an onclick to show menu javascript function -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav> 
+
+<!-- Text Box  -->
+<div class="text-box">
+            <h1 style="color: #F8FAE5;padding: 40px;
+            text-align: center;font-size: 62px">Holistic Fitness</h1>
+            <p style="color: #05dbebe1; font-size: 30px;">The art of knowing thyself</p>
+            <a href="" class="hero-btn">More About Us</a>
+</div>
+</section> 
+
+<!-- What we offer -->
+<section class="offer">
+    <h1>What We Offer</h1>
+    <fieldset>
+    <legend><i><b>Your Image Matters</b></i></legend>
+    <p>As the name suggests, holistic fitness is a breed of training which addresses the whole person, not just their physical training. <br>
+    The aim is to work towards wellness, achieving physical fitness through a combination of mental and physical avenues.<br>
+    We know what it means to be stressed, anxious, in pain and depressed, so me creates plans that addresses your special need and not only the physical but spiritual to make you whole.<br>
+    In the realm of holistic fitness, let us embark,upon a journey of wellness, mind, and heart. </p>
+    
+    <div class="row">
+        <div class="offer-col">
+        <h3>Physical Image</h3>
+        <p>Physical body image is how you perceive, think and feel about your body. This can include your body's size, shape and weight, or individual body parts. <br> 
+        People can experience a positive or negative body image and can be influenced by both the internal and external factors in our lives.</p>
+        <button><a href="" class="button">See More</a></button>
+        </div>
+
+        <div class="offer-col">
+        <h3>Self image</h3>
+        <p>Self image is the personal view, or mental picture, that we have of ourselves. <br> Self-image is an “internal dictionary” that describes the characteristics of the self, including such things as intelligent, beautiful, ugly, talented, selfish, and kind.</p>
+        <button><a href="" class="button">See More</a></button>
+        </div>
+
+        <div class="offer-col">
+        <h3>Spiritual Image</h3>
+        <p>Pspiritual identity as a persistent sense of self that addresses ultimate questions about the nature, purpose, and meaning of life, resulting in behaviors that are consonant with the individual's core values</p>
+        <button><a href="" class="button">See More</a></button>
+        </div>
+    </div>
+    </fieldset>
+</section>
+
+
+<!-- Founder Message Section -->
+<section class="founder">
+    <h1>Message From Our Founder</h1>
+    <fieldset>
+        <legend><i><b>Only you should Care that much - "for you"!</i></b></legend>
+    <p>As our name suggests, holistic fitness is a breed of de-programming training which addresses the whole person, not just the physical. <br>
+    </p>
+    <div class="row">
+        <div class="founder-name">
+            <img src="holisticfitnessimages/FounderImage.jpeg" alt="founder image" style="float: left; ">
+            <div id="first-last">
+            <h4>Mansa Musa -<i>Founder</i></h4>
+            </div>
+        </div>
+        <div id="founder-message">
+            <h3>"know thyself"</h3>
+            <p>The aim is to work towards wellness, achieving physical fitness through a combination of mental and physical avenues.<br>
+            We know what it means to be stressed, anxious, in pain and depressed, so me creates plans that addresses your special need and not only the physical but spiritual to make you whole.<br>
+            In the realm of holistic fitness, let us embark,upon a journey of wellness, mind, and heart.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Login form -- style is in the head tag-->
+<section>
+    <h2>Login Form</h2>
+    <form action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      </div>
+    
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    
+</section>
+
+
+
+<!-- Added the javascript fuction for toggle Menu -->
+<!-- adjust the footer to be in list view like the header -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-240px";
+    }
+</script>
+
+
+
+
+
+
+
+<!-- Bottom nav links and a tag to be able to click on links --> 
+      <div class="bottomnav-links">
+          <a class="active" href="#holistic-commuinity">Holistic Commuinity</a>
+          <a href="#about">About Us</a>
+          <a href="#career">Career</a>
+        <a href="#your-opinion-matters">Your Opinion Matters</a>
+      </div>
+</body>
+</html>
+
+
+
+<!-- sort below into top -->
+
+    
+<!-- </head>
+<body>
+    <h1 style="color: rgb(220, 20, 187); text-align: center;padding: 40px;
+    text-align: center;background: #1abc9c;font-size: 60px">Holistic Fitness</h1>
+    <p style="color: rgb(57, 3, 99); text-align: center;padding: 5px;text-align: center;font: size 20px;px">The art of Knowing Thyself!</p>
+    <div class="topnav">
+     <a class="active" href="#memberships">Memberships</a>
+     <a href="#find a gym">Find a Gym</a>
+     <a href="#free pass">Free Pass</a>
+     <a href="#login">Log In</a>
+     <a href="#support">Support</a>
+    </div>
+
+    <fieldset>
+        <legend><i>Flow like water my Friend</i></legend>
+        <h2>What Makes us the BEST</h2>
+        <p>As the name suggests, holistic fitness is a breed of training which addresses the whole person, not just their physical training. <br>
+        The aim is to work towards wellness, achieving physical fitness through a combination of mental and physical avenues.<br>
+        We know what it means to be stressed, anxious, in pain and depressed, so me creates plans that addresses your special need and not only the physical but spiritual to make you whole.<br>
+        In the realm of holistic fitness, let us embark,upon a journey of wellness, mind, and heart. -->
+        <!-- add float and clear for fonts to wrap around images eg: clear: left; and add box shadow div {
+   box-shadow: 2px 2px 1px rgba(100%, 50%, 50%, .33);
+}
+-->
+          <!-- </p>
+        <img src="images/Holistic-Fitness.png" alt="logo"style="float:left;width:100%;height:100%;">
+        <br>
+        <h2>Holistic Fitness Encompasses:</h2>
+        <ul>
+            <li>Nourish Your Temple</li>
+            <li>Calisthenics</li>
+            <li>Hydration Symphonys</li>
+            <li>Meditate in Stillnes</li>
+            <li>Love for Thyself</li>
+            <li>Stretch Like a Willow</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>See what fits your Goal and lets get going</legend>
+        <h3>Our Services</h3>
+        
+    <fieldset>
+        <legend><i>Body-Weight Training</i></legend>
+        <h3>Meet Calisthenics</h3>
+        <img src="images/72DA9E2D-4BF5-455E-B613-C0DFB7BDFC5B_1_105_c.jpeg" alt="calisthenics-pull-up" style="float:left;width:500px;height:600px;">
+        <p>Calisthenics are exercises that don't rely on anything but body weight. They allow for the development of strength, endurance, flexibility, and coordination. Our program is tailored to teach you the basics fundamentals of body weight training and build on the basics to advace level skill sets. 
+            Calisthenics is better for burning calories, which in turn may help you lose weight and body fat. That's because it uses a lot of movement. This requires more energy, which your body gets by burning calories. The more calories you burn, the more weight you lose.</p>
+        <button type="button" class="enroll" style="color:coral;">Enroll to Calisthenics</button> 
+    </fieldset>
+
+    <fieldset>
+        <legend><i>Be Still and Know I am (you are) God</i></legend>
+        <h3>Meditate in Stillness</h3>
+        <img src="images/IMG_0129.jpeg" alt="meditating sitting down" style="float:right;width:500px;height:600px;">
+        <p>Meditation is a practice of mindfulness, or focusing the mind on a particular object, thought, or activity to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state. Our classes goes from one on one to a group class with a focused leadership into the facets of meditation and mindfullness.</p>
+        <button type="button" class="enroll" style="color:#0cf1f1;">Enroll to Meditate</button> 
+    </fieldset>
+    
+    <fieldset>
+        <legend><i>Be like water - Flow</i></legend>
+        <h3>Stretch Like a Willow</h3>
+        <img src="images/31DCCECA-1A91-4030-9891-8DCFE4326315_1_105_c.jpeg" alt="stretching" style="float:left;width:500px;height:600px;">
+        <p>Meditation is a practice of mindfulness, or focusing the mind on a particular object, thought, or activity to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state. Our classes goes from one on one to a group class with a focused leadership into the facets of meditation and mindfullness.</p>
+        <button type="button" class="enroll" style="color:#b27cd5;">Enroll to Meditate</button> 
+    </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend><i>Goals Achieved - Yours can be too!</i></legend>
+        <h3>What our clients are saying about us</h3>
+        
+        <h2>Star Rating</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span
+
+        <p></p> 
+    </fieldse>
+
+    <fieldset>
+        <legend><i>We are here for you..</i></legend>
+        <h3>Tell us your story:</h3>
+        <textarea id="story" name="story" rows="5" cols="33">What you would like to change..</textarea>
+        <button type="button" class="submit" style="color:#b27cd5;">Submit</button>
+    </fieldset>
+        
+    
+</body>
+</html> -->
